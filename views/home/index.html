@@ -7,11 +7,176 @@
 	<!-- <link rel="stylesheet" href="index.css"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 	<script src="https://unpkg.com/htmx.org@1.9.2"></script>
-	<title>test</title>
+	<title>Min side</title>
 </head>
 
 <body>
 	{% include "partials/header.html" %}
+	<section style ="font-size: 1.5rem;padding: 1rem 0 1rem 0" class="container">
+		<div style="display:flex">
+		<span style="flex:1">Min Side</span>
+		<a href="#" role="button" style="margin-right:0.5rem">Ny aktivitet</a>
+		<a href="#" role="button" style="margin-right:0.5rem">Ny gruppe</a>
+		<!-- <a href="#" role="button">ny hjelper?</a> -->
+
+		</div>
+	<hr>
+	</section>
+
+	<section class="container">
+		<article>
+		<table>
+			<caption><h3>Min Uke</h3></caption>
+  <thead>
+    <tr>
+      <th>Mandag</th>
+      <th>Tirsdag</th>
+      <th>Onsdag</th>
+      <th>Torsdag</th>
+      <th>Fredag</th>
+      <th>Lørdag</th>
+      <th>Søndag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+		  <ul>
+			  <li class="li"><a>09:00 konsertsafari</a></li>
+			 <li class="li"><a>13:00 sen lunsj</a></li>
+
+		  </ul>
+	  </td>
+      <td></td>
+      <td></td>
+      <td>
+			  <li class="li"><a>18:00 Yoga</a></li>
+
+	  </td>
+      <td></td>
+      <td>
+		  <li class="li"><a>21:00 Karaoke</a></li>
+
+	  </td>
+      <td></td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+</article
+	</section>
+
+	<section>
+		<article>
+<table role="grid">
+	<caption><h3>Historikk</h3></caption>
+  <thead>
+    <tr>
+      <th>Aktivitet</th>
+      <th>Person</th>
+      <th>Poeng</th>
+      <th>Kommentar</th>
+	  <th>Dato</th>
+	  <th>Endre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Telefonsamtale</td>
+      <td>Guri Malla</td>
+      <td>5</td>
+      <td>Lorem ipsum</td>
+	  <td>01.01.23</td>
+	  <td><a>rediger</a></td>
+    </tr>
+
+    <tr>
+      <td>Melding</td>
+      <td>Guri Malla</td>
+      <td>5</td>
+      <td>Kommentar</td>
+	  <td>01.01.23</td>
+	  <td><a>rediger</a></td>
+    </tr>
+
+
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+</article>
+		</section>
+
+		<section>
+			<article>
+<table role="grid">
+	<caption><h3>Meldinger</h3></caption>
+  <thead>
+    <tr>
+      <th>Emne</th>
+      <th>Sender</th>
+      <th>Mottaker</th>
+      <th>Dato</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Møteinnkalling</td>
+      <td>ola@example.com</td>
+      <td>kari@example.com</td>
+      <td>01.09.2023</td>
+      <td>Sendt</td>
+    </tr>
+    <tr>
+      <td>Prosjektstatus</td>
+      <td>kari@example.com</td>
+      <td>ola@example.com</td>
+      <td>02.09.2023</td>
+      <td>Lest</td>
+    </tr>
+    <tr>
+      <td>Faktura</td>
+      <td>faktura@example.com</td>
+      <td>ola@example.com</td>
+      <td>03.09.2023</td>
+      <td>Ulest</td>
+    </tr>
+    <tr>
+      <td>Invitasjon</td>
+      <td>event@example.com</td>
+      <td>kari@example.com</td>
+      <td>04.09.2023</td>
+      <td>Lest</td>
+    </tr>
+    <tr>
+      <td>Oppdatering</td>
+      <td>info@example.com</td>
+      <td>kari@example.com</td>
+      <td>05.09.2023</td>
+      <td>Arkivert</td>
+    </tr>
+  </tbody>
+</table>
+				</article>
+		<section>
 </body>
  
 </html> 
+
+<style>
+.bordered{
+	padding:0.5rem;
+	border:1px solid gainsboro;
+}
+
+.bordered > div{
+	backround-color: red;
+}
+td, th {
+  width: 14.28%;  /* 100% divided by 7 */
+}
+
+.li	{
+	 	border-bottom: 1px solid gainsboro;
+	}
+</style>
